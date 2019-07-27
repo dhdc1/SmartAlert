@@ -59,7 +59,7 @@ public class WaitActivity extends AppCompatActivity {
             Bundle extras = intent.getExtras();
             String msg = extras.getString("msg", "1,1");
             String[] a = msg.split(",");
-            String info = "หมายเลข " + a[0] + " อีก 5 คิวจะถึงคิวของท่าน กรุณาไปรอที่ " + a[1];
+            String info = "หมายเลข " + a[0] + " อีก 5 คิวจะถึงคิวของท่าน กรุณาไปรอที่บริเวณ " + a[1];
             txt_wait.setText(info);
 
         } else {
@@ -110,7 +110,7 @@ public class WaitActivity extends AppCompatActivity {
                     addNotification(msg_alert);
                     mPlayer.start();
 
-                    String info = "หมายเลข " + b[0] + " อีก 5 คิวจะถึงคิวของท่าน กรุณาไปรอที่ " + b[1];
+                    String info = "หมายเลข " + b[0] + " อีก 5 คิวจะถึงคิวของท่าน กรุณาไปรอที่บริเวณ " + b[1];
                     txt_wait.setText(info);
                 }
 
